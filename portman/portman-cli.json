@@ -1,0 +1,9 @@
+{
+    "local": "../docs/oas.yaml",
+    "output": "newCollectiom.postman.json",
+    "portmanConfigFile": "portman.config.json",
+    "includeTests": true,
+    "syncPostman": false,
+    "baseUrl": "https://petstore1.swagger.io/v2",
+    "envFile": ".env"
+}
