@@ -18,11 +18,12 @@ jobs:
     steps:
       - checkout
       - node/install:
-          install-yarn: true
           node-version: latest
       - run:
           name: "run npx"
-          command: npx @apideck/portman --cliOptionsFile portman-cli.json
+          command: |
+            pwd
+            npx @apideck/portman --cliOptionsFile portman-cli.json
             
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
