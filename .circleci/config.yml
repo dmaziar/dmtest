@@ -25,6 +25,7 @@ jobs:
             cd ./portman
             pwd
             npx @apideck/portman --cliOptionsFile portman-cli.json
+            npx newman run newCollectiom.postman.json
             
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
