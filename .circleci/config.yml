@@ -22,6 +22,7 @@ jobs:
       - run:
           name: "run npx"
           command: |
+            cd ./portman
             pwd
             ls -a
             
