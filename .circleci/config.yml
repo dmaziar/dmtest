@@ -20,12 +20,13 @@ jobs:
       - node/install:
           node-version: latest
       - run:
-          name: "run npx"
+          name: "run postman api tests"
+          working_directory: portman
           command: |
-            cd ./portman
             pwd
             npx @apideck/portman --cliOptionsFile portman-cli.json
             npx newman run newCollectiom.postman.json
+            echo ${.env}
             
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
