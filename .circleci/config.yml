@@ -23,7 +23,7 @@ jobs:
           name: "run postman api tests"
           working_directory: portman
           command: |
-            echo ${.env}
+            cat .env
             pwd
             npx @apideck/portman --cliOptionsFile portman-cli.json
             npx newman run newCollectiom.postman.json
