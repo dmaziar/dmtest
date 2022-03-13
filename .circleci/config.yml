@@ -24,7 +24,7 @@ jobs:
           working_directory: portman
           command: |
             echo $account_id\\n$dev_token >> .env
-            cat .env1
+            cat .env
             ls -a
             pwd
             
