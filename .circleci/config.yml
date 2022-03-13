@@ -33,4 +33,5 @@ jobs:
 workflows:
   my-workflow:
     jobs:
-      - generate-collection
+      - generate-collection:
+         context: dev
