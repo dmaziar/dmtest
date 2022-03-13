@@ -23,9 +23,7 @@ jobs:
           name: "run postman api tests"
           working_directory: portman
           command: |
-            echo $account_id > .env1 
-            echo "\n" > .env1
-            echo $dev_token > .env1
+            echo $account_id\\n$dev_token >> .env
             cat .env1
             ls -a
             pwd
