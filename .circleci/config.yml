@@ -23,8 +23,9 @@ jobs:
           name: "run postman api tests"
           working_directory: portman
           command: |
-            echo "$ACCOUNT_ID" >> .env 
-            cat .env
+            echo "$ACCOUNT_ID" >> .env1 
+            cat .env1
+            ls -a
             pwd
             
 # Invoke jobs via workflows
