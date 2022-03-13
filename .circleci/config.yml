@@ -23,10 +23,9 @@ jobs:
           name: "run postman api tests"
           working_directory: portman
           command: |
+            echo "$ACCOUNT_ID" | "$DEV_TOKEN" > .env 
             cat .env
             pwd
-            npx @apideck/portman --cliOptionsFile portman-cli.json
-            npx newman run newCollectiom.postman.json
             
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
